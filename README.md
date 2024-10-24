@@ -1,3 +1,43 @@
+# bsdclaro
+
+## Ejecutar proyecto
+
+1. Clonar proyecto
+
+```
+git clone https://github.com/yuin21/bsdclaro.git
+```
+
+2. Instalar dependencias del proyecto
+
+```
+composer install
+```
+
+3. Generar archivo .env y Key
+
+```
+cp .env.example .env
+php artisan key:generate
+```
+
+4. Crear la base de datos (Puedes utilizar script SQL)
+
+```
+php artisan migrate --seed
+```
+
+5. Instalar dependencias de Nodejs
+
+```
+npm install
+```
+
+6. Correr proyecto
+
+```
+php artisan serve
+```
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
