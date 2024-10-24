@@ -24,7 +24,7 @@ php artisan key:generate
 4. Crear la base de datos 
 
 ```
-php artisan migrate --seed
+php artisan migrate --seed (o copiar el script de la bd)
 ```
 
 5. Instalar estilos css
