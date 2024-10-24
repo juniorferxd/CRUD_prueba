@@ -5,7 +5,7 @@
 1. Clonar proyecto
 
 ```
-git clone https://github.com/yuin21/bsdclaro.git
+git clone https://github.com/juniorferxd/CRUD_prueba.git
 ```
 
 2. Instalar dependencias del proyecto
@@ -21,16 +21,17 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-4. Crear la base de datos (Puedes utilizar script SQL)
+4. Crear la base de datos 
 
 ```
 php artisan migrate --seed
 ```
 
-5. Instalar dependencias de Nodejs
+5. Instalar estilos css
 
 ```
 npm install
+npm run build
 ```
 
 6. Correr proyecto
