@@ -1,3 +1,44 @@
+# CRUD_prueba
+
+## Ejecutar proyecto
+
+1. Clonar proyecto
+
+```
+git clone https://github.com/juniorferxd/CRUD_prueba.git
+```
+
+2. Instalar dependencias del proyecto
+
+```
+composer install
+```
+
+3. Generar archivo .env y Key
+
+```
+cp .env.example .env
+php artisan key:generate
+```
+
+4. Crear la base de datos 
+
+```
+php artisan migrate --seed (o copiar el script de la bd)
+```
+
+5. Instalar estilos css
+
+```
+npm install
+npm run build
+```
+
+6. Correr proyecto
+
+```
+php artisan serve
+```
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
