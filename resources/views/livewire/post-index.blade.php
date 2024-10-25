@@ -30,7 +30,7 @@
                                 <td style="text-align: center;">{{ $posts->perPage() * ($posts->currentPage() - 1) + $loop->iteration }}</td>
                                 <td class="py-2">{{ $post->titulo }}</td>
                                 <td class="py-2">{{ $post->contenido }}</td>
-                                <td class="py-2">{{ \Carbon\Carbon::parse($post->created_at)->format('d/m/Y H:i') }}</td>
+                                <td class="py-2">{{ \Carbon\Carbon::parse($post->created_at)->setTimezone('America/Lima')->format('d/m/Y H:i') }}</td>
                                 <td width="200px" class="py-2 text-center">
                                     <div class="flex justify-center gap-2">
                                         <a href="{{ route('posts.edit', $post) }}" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-1 px-2 rounded">
